@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login | MyWallet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    	
+    	$("button").click(function()
+    			{
+    		          if($("#userId").val()==null ||  $("#userId").val()=="")
+    		        	  {
+                            
+    		        	  }; 
+    			});
+    });    
+    </script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="http://localhost:8080/BootStrap/home.html" class="navbar-brand"><span class="glyphicon glyphicon-briefcase"/>MyWallet</a>
+			</div>
+		</div>
+	</nav>
+<div class="row">
+
+<div class="col-md-12"></div>
+</div>
+	<div class="row">
+		<div class="col-md-7"></div>
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Login</h4>
+				</div>
+				<div class="panel-body">
+					<form>
+					<p id="alert"></p>
+						<div class="form-group">
+							<label for="userId">UserId</label> <input
+								type="text" class="form-control" id="userId"
+								placeholder="UserId">
+						</div>
+						<div class="form-group">
+							<label for="password">Password</label> <input
+								type="password" class="form-control" id="password"
+								placeholder="Password">
+						</div>
+						
+						<div class="checkbox">
+							<label> <input type="checkbox"> Remember me 
+							</label>
+						</div>
+						<button type="submit" class="btn btn-default" id="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<script type="text/javascript">
+	   
+		function validate() {
+			text
+			userName = document.getElementById("userId");
+			if (userName = null) {
+				document.getElementById("alert").innerHTML = "UserId required"
+				//<div class="alert alert-danger" role="alert">...</div>
+			}
+		}
+	</script>
+</body>
+</html>
